@@ -1,0 +1,15 @@
+language: node_js
+    node_js:
+    - stable
+    cache:
+      directories:
+      - node_modules
+    deploy:
+      provider: heroku
+      api_key:
+        secure: "EncryptedAPIKey"
+        app: marcinowe
+      on:
+        repo: Bednar22/Marcinowe
+    script:
+    - echo "skipping tests"
